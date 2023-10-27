@@ -6,7 +6,7 @@ The main assumption in simulation methods usually is that we can always generate
 
 Suppose we would like to sample for the distribution with the density $\rho(x)=2x\mathbb{1}_{[0,1]}(x)$. This density can easily be sampled from using inverse CDF however, we will use it demonestrate importance resmpling. Let $X_1,X_2,....,X_n$ be samples from $\textrm{Uniform}(0,1)$. The samples $X_1,X_2,....,X_n$ are equally distributed in the interval $[0,1]$. In this example importance resampling will remove the samples that are close to $0$ since $\rho$ is tiny near $0$ and similarly it will repeat the values that are closer to $1$. Importance resampling specifies how many samples to keep by calculating an "importance weight" for every $X_i$. The ones with higher weights gets "resampled" more often than the ones with smaller importance weights. 
 
-![1.png](attachment:1.png)
+![png](1.png)
 
 #### Algorithm: Importance resampling from uniform distribution  
 1- Generate samples $X_1,..,X_n$ from $\textrm{Uniform}(0,1)$.  
